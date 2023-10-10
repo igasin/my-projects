@@ -39,6 +39,10 @@
         gap: 49px 0;
     }
 }
+.team-block-card{   
+    display: flex;
+    flex-direction: column;
+}
 .team-block-card__avatar img{
     width: 100%;
     object-fit: cover;
@@ -84,6 +88,7 @@
     }
 }
 .team-block-card__about {
+    flex-grow: 1;
     @extend %p;
     color: #6C7279;
     margin: 0 0 37px 0;
