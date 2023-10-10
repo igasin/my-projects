@@ -1,38 +1,3 @@
-$(function () {
-		$(document).scroll(function () {
-			var $header = $("header");
-			var $header__container = $(".navigation");
-			$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
-			$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
-		});
-	});
-
-const swiper = new Swiper('.swiper', {
-	direction: 'horizontal',
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	// скролл мышью
-	// mousewheel: {
-	// 	sensitivity: 1,
-	// 	eventsTarget: ".swiper"
-	// },
-	// скрол клавиатурой
-	keyboard: {
-		enabled: true,
-		onlyInViewport: true,
-		pageUpDown: true,
-	},
-	grabCursor: true,
-	touchRatio: 3,
-});
-// const menu = document.querySelector("#menu__box");
-// const links = Array.from(menu.children);
-// 	links.forEach((link) => {
-// 	link.addEventListener("click", closeOnClick);
-// });
 const hamb = document.querySelector("#hamb");
 const popup = document.querySelector("#popup");
 const body = document.body;
@@ -72,3 +37,34 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
+
+$(function () {
+	$(document).scroll(function () {
+		var $header = $("header");
+		var $header__container = $(".navigation");
+		$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
+		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
+	});
+});
+
+const swiper = new Swiper('.swiper', {
+	direction: 'horizontal',
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	// скролл мышью
+	// mousewheel: {
+	// 	sensitivity: 1,
+	// 	eventsTarget: ".swiper"
+	// },
+	// скрол клавиатурой
+	keyboard: {
+		enabled: true,
+		onlyInViewport: true,
+		pageUpDown: true,
+	},
+	grabCursor: true,
+	touchRatio: 3,
+});
