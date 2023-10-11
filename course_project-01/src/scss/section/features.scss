@@ -13,6 +13,7 @@
 }
 .features-block {
     display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 87px 30px;

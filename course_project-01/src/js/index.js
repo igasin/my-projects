@@ -66,5 +66,5 @@ const swiper = new Swiper('.swiper', {
 		pageUpDown: true,
 	},
 	grabCursor: true,
-	touchRatio: 3,
+	touchRatio: 1,
 });

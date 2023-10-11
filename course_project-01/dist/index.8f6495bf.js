@@ -10,4 +10,4 @@ n.forEach(e=>{e.addEventListener("click",c)}),$(function(){$(document).scroll(fu
 // 	eventsTarget: ".swiper"
 // },
 // скрол клавиатурой
-keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},grabCursor:!0,touchRatio:3});
+keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},grabCursor:!0,touchRatio:1});
