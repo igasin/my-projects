@@ -1,6 +1,9 @@
 .download {
     padding: 132px 0 114px 0;
-    scroll-margin-top: 20px;
+    scroll-margin-top: 100px;
+    @media (max-width: 765px) {
+        scroll-margin-top: 56px;
+    }
     @media (max-width: 1200px) {
         padding: 93px 0 78px 0;
     }

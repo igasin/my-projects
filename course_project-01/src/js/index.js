@@ -10,17 +10,17 @@ hamb.addEventListener("click", hambHandler);
 
 // Выполняем действия при клике ..
 function hambHandler(e) {
-  e.preventDefault();
-  // Переключаем стили элементов при клике
-  popup.classList.toggle("open");
-  hamb.classList.toggle("active");
-  body.classList.toggle("noscroll");
-  renderPopup();
+	e.preventDefault();
+// Переключаем стили элементов при клике
+	popup.classList.toggle("open");
+	hamb.classList.toggle("active");
+	body.classList.toggle("noscroll");
+	renderPopup();
 }
 
 // Здесь мы рендерим элементы в наш попап
 function renderPopup() {
-  popup.appendChild(menu);
+	popup.appendChild(menu);
 }
 
 // Код для закрытия меню при нажатии на ссылку
@@ -28,20 +28,20 @@ const links = Array.from(menu.children);
 
 // Для каждого элемента меню при клике вызываем ф-ию
 links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
+	link.addEventListener("click", closeOnClick);
 });
 
 // Закрытие попапа при клике на меню
 function closeOnClick() {
-  popup.classList.remove("open");
-  hamb.classList.remove("active");
-  body.classList.remove("noscroll");
+	popup.classList.remove("open");
+	hamb.classList.remove("active");
+	body.classList.remove("noscroll");
 }
 
 $(function () {
 	$(document).scroll(function () {
 		var $header = $("header");
-		var $header__container = $(".navigation");
+		var $header__container = $(".wrapper-nav");
 		$header.toggleClass('scrolled', $(this).scrollTop() > $header.height());
 		$header__container.toggleClass('scrolled-border', $(this).scrollTop() > $header.height());
 	});

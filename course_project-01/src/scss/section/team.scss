@@ -1,6 +1,9 @@
 .team {
     padding: 114px 0;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 100px;
+    @media (max-width: 765px) {
+        scroll-margin-top: 56px;
+    }
     @media (max-width: 1024px) {
         padding: 78px 0;
     }
