@@ -6,9 +6,15 @@
     text-decoration: none;
     font-family: Raleway, serif, sans-serif;
     scroll-behavior: smooth;
+    @media (max-width: 765px) {
+        scroll-behavior: auto;
+    }
 }
 .wrapper{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+img{
+    display: block;
 }
